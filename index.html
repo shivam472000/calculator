@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(149, 147, 253);
+        }
+
+        h1{
+            text-align: center;
+            color: rgb(4, 5, 5);
+        }
+        #clear{
+            width: 130px;
+
+        }
+        .formstyle{
+            width: 130px;
+            height: 261px;
+            margin: auto;
+            border: 2px solid black;
+        }
+        input{
+            width: 40px ;
+            background-color: rrgb(209, 209, 240);
+        }
+        #anshwerstyle{
+            width: 120px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="h1">CALCULATOR</h1>
+    <div class="formstyle">
+        <form name="forms">
+            <input type="text" name="anshwer" id="anshwerstyle">
+            <br> <br>
+            <input type="button" value=" 1 " onclick="forms.anshwer.value +='1' ">
+            <input type="button" value=" 2 " onclick="forms.anshwer.value +='2' ">
+            <input type="button" value=" 3 " onclick="forms.anshwer.value +='3' ">
+            <br><br>
+
+
+            <input type="button" value=" 4 " onclick="forms.anshwer.value +='4' ">
+            <input type="button" value=" 5 " onclick="forms.anshwer.value +='5' ">
+            <input type="button" value=" 6 " onclick="forms.anshwer.value +='6' ">
+            <br><br>
+
+
+            <input type="button" value=" 7 " onclick="forms.anshwer.value +='7' ">
+            <input type="button" value=" 8 " onclick="forms.anshwer.value +='8' ">
+            <input type="button" value=" 9 " onclick="forms.anshwer.value +='9' ">
+            <br><br>
+
+
+            <input type="button" value=" + " onclick="forms.anshwer.value +='+' ">
+            <input type="button" value=" - " onclick="forms.anshwer.value +='-' ">
+            <input type="button" value=" * " onclick="forms.anshwer.value +='*' ">
+            <br><br>
+            
+
+            <input type="button" value=" / " onclick="forms.anshwer.value +='/' ">
+            <input type="button" value=" 0 " onclick="forms.anshwer.value +='0' ">
+            <input type="button" value=" = " onclick="forms.anshwer.value =eval(forms.anshwer.value) ">
+
+            <br> <br>
+            <input type="button" value="Clear All" onclick="forms.anshwer.value=''" id="clear">
+
+            </form>
+
+
+    </div>
+</body>
+</html>
